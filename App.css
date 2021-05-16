@@ -1,0 +1,247 @@
+
+
+body {
+  background-image: url("Rov_cut_Design_Final/background/use_background.jpg"); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* ---------------navigation bar---------------- */
+
+ul.topnav {
+  z-index:1;
+  height: fit-content;
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  background-image: url("Rov_cut_Design_Final/navbar/btn_login/logo_rov_shape.png");
+  position: fixed;
+  top: 0;
+  /* background-repeat: no-repeat;
+  background-size: auto; */
+  background-size:100% 50px;
+  background-repeat: no-repeat;
+  height: 50px; 
+  width:100%; 
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1px 25px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(209, 209, 209);}
+
+ul.topnav li a.active {background-color: rgb(174, 96, 247);}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+li a, .dropbtn {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  /* padding: 8px 16px; */
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(187, 187, 187, 0.199);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(167, 95, 235);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(228, 208, 208, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(167, 95, 235);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+.right {
+  position: relative;
+  background-color: rgb(174, 96, 247);
+ 
+  color: #FFFFFF;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 15px;
+  width: 120px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.right:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.right:active:after {
+  
+  opacity: 1;
+  transition: 0s
+}
+
+
+/* .bigFont{
+  font-size: 26px;
+  font-family: "PSLEmpirePro";
+  color: rgb(0, 0, 0);
+  line-height: 1.153;
+  text-align: left;
+  -moz-transform: matrix( 1,0,0,0.9990860866466,0,0);
+  -webkit-transform: matrix( 1,0,0,0.9990860866466,0,0);
+  -ms-transform: matrix( 1,0,0,0.9990860866466,0,0);
+  position: absolute;
+  left: 219.96px;
+  top: 51.376px;
+  z-index: 196;
+}
+
+.smallFont{
+  font-size: 18px;
+  font-family: "PSLKandaModernExtraPro";
+  color: rgb(146, 146, 146);
+  line-height: 1.665;
+  text-align: left;
+  -moz-transform: matrix( 1,0,0,0.9990860866466,0,0);
+  -webkit-transform: matrix( 1,0,0,0.9990860866466,0,0);
+  -ms-transform: matrix( 1,0,0,0.9990860866466,0,0);
+  position: absolute;
+  left: 222.11px;
+  top: 38.002px;
+  z-index: 195;
+} */
+
+
+.logo-image img{
+transform: scale(0.7, 0.7);
+-ms-transform: scale(0.7, 0.7);
+-webkit-transform: scale(0.7, 0.7);
+margin-top: -20%;
+margin-left: 3%;
+
+}
+
+
+
+/* ----------footer---------- */
+.footer{
+  background-image: url("Rov_cut_Design_Final/footer/use_footer_menu_section.jpg") ;
+  background-size:100% 150px;
+  background-repeat: no-repeat;
+  height: 150px; 
+  width:100%; 
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  padding-top: 13px;
+}
+
+/* --------footer-------- */
+/* Generic styling */
+
+footer {
+  background-image: url("Rov_cut_Design_Final/footer/use_footer_menu_section.jpg") ;
+  background-size:100% 77%;
+  background-repeat: no-repeat;
+  /* height: 150px;  */
+  width:100%; 
+  /* background-color: #555; */
+  color: #bbb;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+
+/* Footer social */
+
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+/* Footer legal */
+.ft-legal {
+  padding: 0.1px;
+  /* background-color: #333; */
+  background-image: url("Rov_cut_Design_Final/footer/footer_bg.jpg") ;
+
+}
+.ft-legal-list {
+  width: 92%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+
+
+/* --------------slideshow---------------------*/
+
